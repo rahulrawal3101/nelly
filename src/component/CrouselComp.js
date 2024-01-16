@@ -5,6 +5,9 @@ import b3 from '../assets/b3.webp';
 import b4 from '../assets/b4.webp';
 import banner1 from '../assets/banner1.png';
 import banner2 from '../assets/banner2.png';
+import banner3 from '../assets/banner3.png';
+import banner4 from '../assets/banner4.png';
+import banner5 from '../assets/banner5.png';
 import { Box, Grid } from '@mui/material';
 import {Slide} from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -22,14 +25,20 @@ const CrouselComp = () => {
 
     },
     {
-        silde: b3,
+        silde: banner3,
         caption:"Slide 3"
 
     },
     {
-        silde: b4,
+        silde: banner4,
         caption:"Slide 4"
-    }];
+    },
+    {
+        silde: banner5,
+        caption:"Slide 4"
+    },
+   
+];
     const proprietes = {
         duration: 2000,
         transitionDuration: 200,

@@ -72,9 +72,9 @@ const SunGlasses = () => {
         <>
             <Grid container>
                 <Grid container>
-                    <Grid item xs={12}  >
-                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Sunglasses Brands</Typography>
-                        <Typography sx={{fontSize:'15px', color:'grey', fontFamily:'sans-serif', textAlign: 'center'}}>Time to shade the Sun with Sunglasses from International Brands</Typography>
+                    <Grid item xs={12} sx={{ p:'0px 10px'}} >
+                        <Typography sx={{ fontSize: {lg:'25px', md:'22px', sm:'20px', xs:'18px'}, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Sunglasses Brands</Typography>
+                        <Typography sx={{fontSize:{lg:'15px', md:'14px', sm:'13px',xs:'13px'}, color:'grey', fontFamily:'sans-serif', textAlign: 'center'}}>Time to shade the Sun with Sunglasses from International Brands</Typography>
 
                     </Grid>
                 </Grid>
@@ -160,7 +160,7 @@ const SunGlasses = () => {
                             imgArr.map((ele, index) => {
                                 return (
                                     <Box sx={{ p: '0px 15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
-                                        <Box sx={{ width: '300px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
+                                        <Box sx={{ width: '290px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
                                             <Box sx={{ height: '370px', width: '100%',  }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>

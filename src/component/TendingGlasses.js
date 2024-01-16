@@ -72,7 +72,7 @@ const TrendingGlasses = () => {
             <Grid container>
                 <Grid container>
                     <Grid item xs={12}>
-                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Trending Eyeglasses</Typography>
+                        <Typography sx={{ fontSize:{lg:'25px', md:'22px', sm:'20px', xs:'18px'}, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Trending Eyeglasses</Typography>
 
                     </Grid>
                 </Grid>
@@ -83,8 +83,8 @@ const TrendingGlasses = () => {
                         onRequestChange={setActiveSlideIndex}
                         itemsToShow={1}
                         itemsToScroll={1}
-                        // autoplay={true}
-                        // autoplayDelay={2000}
+                        autoplay={true}
+                        autoplayDelay={2000}
 
                         // visibleSlideProps={{style:{border:'1px solid red'}}}
 
@@ -102,7 +102,7 @@ const TrendingGlasses = () => {
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`>`}</span>,
                         }}
@@ -120,7 +120,7 @@ const TrendingGlasses = () => {
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`<`}</span>,
                         }}
@@ -157,12 +157,12 @@ const TrendingGlasses = () => {
                                 return (
                                     <Box sx={{ p: '20px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
                                         <Box sx={{ width: '370px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column' }}>
-                                            <Box sx={{ height: '205px', width: '370px',  }}>
+                                            <Box sx={{ height: {lg:'205px', md:'205px', sm:'190px',xs:'180px'}, width: {lg:'370px', md:'370px', sm:'360px', xs:'350px'}, }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>
                                             <Box sx={{ height: '70px', width: '300px', }}>
-                                                <Typography sx={{fontSize:'18px', color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
-                                                <Typography sx={{fontSize:'17px', fontWeight:'bold', color:'#424242', textAlign:'center'}}>₹{ele.srp} <del style={{fontSize:'14px', color:'#bdbdbd'}}>₹{ele.mrp}</del></Typography>
+                                                <Typography sx={{fontSize:{lg:'18px', md:'17px', sm:'15px',xs:'15px'}, color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
+                                                <Typography sx={{fontSize:{lg:'17px', md:'16px',sm:'15px',xs:'15px'}, fontWeight:'bold', color:'#424242', textAlign:'center'}}>₹{ele.srp} <del style={{fontSize:'14px', color:'#bdbdbd'}}>₹{ele.mrp}</del></Typography>
 
                                             </Box>
 

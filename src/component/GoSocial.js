@@ -72,11 +72,11 @@ const GoSocial = () => {
             <Grid container>
                 <Grid container>
                     <Grid item xs={12}>
-                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>#GoSocial With The Trends</Typography>
+                        <Typography sx={{ fontSize: {lg:'25px', md:'22px', sm:'20px', xs:'18px'}, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>#GoSocial With The Trends</Typography>
 
                     </Grid>
                 </Grid>
-                <Grid item xs={12} sx={{ p: '30px' }}>
+                <Grid item xs={12} sx={{ pt: '10px',  }}>
                     <ReactSimplyCarousel
 
                         activeSlideIndex={activeSlideIndex}
