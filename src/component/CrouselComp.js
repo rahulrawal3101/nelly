@@ -57,7 +57,7 @@ const CrouselComp = () => {
             
                 
                 <Box key={index}>
-                  <Box sx={{backgroundImage:`url(${ele.silde})`,display:"flex",alignItems:"center",justifyContent:"center",height:{lg:"280px",md:"200px",sm:"200px",xs:"200px"},backgroundSize:"100% 100%"}}>
+                  <Box sx={{backgroundImage:`url(${ele.silde})`,display:"flex",alignItems:"center",justifyContent:"center",height:{lg:"280px",md:"200px",sm:"180px",xs:"170px"},backgroundSize:"100% 100%"}}>
                      
                   </Box>
                 </Box>

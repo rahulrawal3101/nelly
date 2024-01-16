@@ -26,14 +26,14 @@ const HeaderComp = () => {
  
     <Header/>
     <CrouselComp/>
-    <Grid container sx={{ p:'10px', justifyContent:'space-between'}}>
-        <Grid item xs={5.95} sx={{height:'230px'}}>
-            <img src={banner8} style={{width:'100%', height:'100%'}}/>
+    <Grid container sx={{ p:'10px', justifyContent:'space-between', border:'1px solid red'}}>
+        <Grid item xs={5.95} sx={{ height:{lg:'230px', md:'230px', sm:'170px',xs:'100px'}}}>
+            <img src={banner8} style={{width:'100%',height:'100%'}}/>
 
         </Grid>
 
-        <Grid item xs={5.95} sx={{height:'230px'}}>
-        <img src={banner7} style={{width:'100%', height:'100%'}}/>
+        <Grid item xs={5.95} sx={{ height:{lg:'230px', md:'230px', sm:'170px',xs:'100px'}}}>
+        <img src={banner7} style={{width:'100%',height:'100%'}}/>
         </Grid>
 
     </Grid>
