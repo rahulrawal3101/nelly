@@ -102,7 +102,7 @@ const GoSocial = () => {
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`>`}</span>,
                         }}
@@ -120,7 +120,7 @@ const GoSocial = () => {
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`<`}</span>,
                         }}
