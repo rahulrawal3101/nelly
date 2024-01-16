@@ -1,44 +1,44 @@
 import { Box, Grid, Paper, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
-import h1 from '../assets/h1.webp';
-import h2 from '../assets/h2.webp';
-import h3 from '../assets/h3.webp';
-import h4 from '../assets/h4.webp';
-import h5 from '../assets/h5.webp';
-import h6 from '../assets/h6.webp';
+import brand1 from '../assets/brand1.webp';
+import brand2 from '../assets/brand2.webp';
+import brand3 from '../assets/brand3.webp';
+import brand4 from '../assets/brand4.webp';
+import brand5 from '../assets/brand5.webp';
+import brand6 from '../assets/brand6.webp';
 
 import '../Homepage.css'
 
 
 const imgArr = [
     {
-        img: h1,
+        img: brand1,
         title: 'Harsh Pandit collections',
         
     },
     {
-        img: h2,
+        img: brand2,
         title: 'Akash Choudary Collections',
        
     },
     {
-        img: h3,
+        img: brand3,
         title: 'Palak Purswani Collections',
       
     },
     {
-        img: h4,
+        img: brand4,
         title: 'Sunayana Foxzdar Collections',
         
     },
     {
-        img: h5,
+        img: brand5,
         title: 'Pooja Gaur Collections',
         
     },
     {
-        img: h6,
+        img: brand6,
         title: 'Tanvi Takkar Collecions',
         
     },
@@ -46,7 +46,7 @@ const imgArr = [
 
 ]
 
-const GoSocial = () => {
+const Brands = () => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -71,12 +71,13 @@ const GoSocial = () => {
         <>
             <Grid container>
                 <Grid container>
-                    <Grid item xs={12}>
-                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>#GoSocial With The Trends</Typography>
+                    <Grid item xs={12}  sx={{mt:'23px'}}>
+                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Eyeglasses Brands</Typography>
+                        <Typography sx={{fontSize:'15px', color:'grey', fontFamily:'sans-serif', textAlign: 'center'}}>Dazzle & captivate all eyes with Eyeglasses from International Brands</Typography>
 
                     </Grid>
                 </Grid>
-                <Grid item xs={12} sx={{ p: '30px' }}>
+                <Grid item xs={12} sx={{ pt:'15px' }}>
                     <ReactSimplyCarousel
 
                         activeSlideIndex={activeSlideIndex}
@@ -141,6 +142,7 @@ const GoSocial = () => {
                                 itemsToScroll: 1,
                                 minWidth: 1024,
                             },
+                            
                            
                         ]}
 
@@ -156,16 +158,12 @@ const GoSocial = () => {
                         {
                             imgArr.map((ele, index) => {
                                 return (
-                                    <Box sx={{ p: '15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
-                                        <Box sx={{ width: '290px', height: '390px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
+                                    <Box sx={{ p: '0px 15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
+                                        <Box sx={{ width: '300px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
                                             <Box sx={{ height: '370px', width: '100%',  }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>
-                                            <Box sx={{ height: '70px', width: '100%'}}>
-                                                <Typography sx={{fontSize:'13px', color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
-                                               
-
-                                            </Box>
+                                            
 
                                         </Box>
 
@@ -184,6 +182,6 @@ const GoSocial = () => {
     )
 }
 
-export default GoSocial
+export default Brands
 
 

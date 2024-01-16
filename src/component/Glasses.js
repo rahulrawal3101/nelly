@@ -1,52 +1,52 @@
 import { Box, Grid, Paper, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
-import h1 from '../assets/h1.webp';
-import h2 from '../assets/h2.webp';
-import h3 from '../assets/h3.webp';
-import h4 from '../assets/h4.webp';
-import h5 from '../assets/h5.webp';
-import h6 from '../assets/h6.webp';
+import male from '../assets/male.webp';
+import g1 from '../assets/g1.webp';
+import g2 from '../assets/g2.webp';
+import g3 from '../assets/g3.webp';
+import g4 from '../assets/g4.webp';
+import g5 from '../assets/g5.webp';
 
 import '../Homepage.css'
 
 
 const imgArr = [
     {
-        img: h1,
-        title: 'Harsh Pandit collections',
-        
+        img: g1,
+        title: 'ALF',
+        srp: 999,
+        mrp: 2190
     },
     {
-        img: h2,
-        title: 'Akash Choudary Collections',
-       
+        img: g2,
+        title: 'ALF',
+        srp: 999,
+        mrp: 1590
     },
     {
-        img: h3,
-        title: 'Palak Purswani Collections',
-      
+        img: g3,
+        title: 'ELISIAN',
+        srp: 999,
+        mrp: 2190
     },
     {
-        img: h4,
-        title: 'Sunayana Foxzdar Collections',
-        
+        img: g4,
+        title: 'ALF',
+        srp: 999,
+        mrp: 1590
     },
     {
-        img: h5,
-        title: 'Pooja Gaur Collections',
-        
-    },
-    {
-        img: h6,
-        title: 'Tanvi Takkar Collecions',
-        
+        img: g5,
+        title: 'ALF',
+        srp: 999,
+        mrp: 2990
     },
 
 
 ]
 
-const GoSocial = () => {
+const Glasses = () => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -71,8 +71,8 @@ const GoSocial = () => {
         <>
             <Grid container>
                 <Grid container>
-                    <Grid item xs={12}>
-                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>#GoSocial With The Trends</Typography>
+                    <Grid item xs={12} >
+                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}><a href='' style={{color:'#424242'}}>Sunglasses On Sale - For you</a></Typography>
 
                     </Grid>
                 </Grid>
@@ -83,8 +83,8 @@ const GoSocial = () => {
                         onRequestChange={setActiveSlideIndex}
                         itemsToShow={1}
                         itemsToScroll={1}
-                        autoplay={true}
-                        autoplayDelay={2000}
+                        // autoplay={true}
+                        // autoplayDelay={2000}
 
                         // visibleSlideProps={{style:{border:'1px solid red'}}}
 
@@ -137,11 +137,10 @@ const GoSocial = () => {
                                 minWidth: 600,
                             },
                             {
-                                itemsToShow: 4,
+                                itemsToShow: 3,
                                 itemsToScroll: 1,
                                 minWidth: 1024,
                             },
-                           
                         ]}
 
                         speed={300}
@@ -156,14 +155,14 @@ const GoSocial = () => {
                         {
                             imgArr.map((ele, index) => {
                                 return (
-                                    <Box sx={{ p: '15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
-                                        <Box sx={{ width: '290px', height: '390px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
-                                            <Box sx={{ height: '370px', width: '100%',  }}>
+                                    <Box sx={{ p: '20px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
+                                        <Box sx={{ width: '370px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column' }}>
+                                            <Box sx={{ height: '205px', width: '370px',  }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>
-                                            <Box sx={{ height: '70px', width: '100%'}}>
-                                                <Typography sx={{fontSize:'13px', color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
-                                               
+                                            <Box sx={{ height: '70px', width: '300px', }}>
+                                                <Typography sx={{fontSize:'18px', color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
+                                                <Typography sx={{fontSize:'17px', fontWeight:'bold', color:'#424242', textAlign:'center'}}>₹{ele.srp} <del style={{fontSize:'14px', color:'#bdbdbd'}}>₹{ele.mrp}</del></Typography>
 
                                             </Box>
 
@@ -184,6 +183,6 @@ const GoSocial = () => {
     )
 }
 
-export default GoSocial
+export default Glasses
 
 

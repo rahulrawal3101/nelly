@@ -3,6 +3,8 @@ import b1 from '../assets/b1.webp';
 import b2 from '../assets/b2.webp';
 import b3 from '../assets/b3.webp';
 import b4 from '../assets/b4.webp';
+import banner1 from '../assets/banner1.png';
+import banner2 from '../assets/banner2.png';
 import { Box, Grid } from '@mui/material';
 import {Slide} from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -10,12 +12,12 @@ import 'react-slideshow-image/dist/styles.css'
 const CrouselComp = () => {
 
     const images = [{
-        silde: b1,
+        silde: banner1,
         caption:"Slide 1"
 
     },
     {
-        silde: b2,
+        silde: banner2,
         caption:"Slide 2"
 
     },

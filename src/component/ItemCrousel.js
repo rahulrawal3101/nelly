@@ -72,7 +72,7 @@ const ItemCrousel = () => {
             <Grid container>
                 <Grid container>
                     <Grid item xs={12} sx={{mt:'30px'}}>
-                        <Typography sx={{ fontSize: '25px', fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Eyeglasses On Sale - For you</Typography>
+                        <Typography sx={{ fontSize: {lg:'25px', md:'22px', sm:'20px', xs:'18px'}, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}><a href='' style={{color:'#424242'}}>Eyeglasses On Sale - For you</a></Typography>
 
                     </Grid>
                 </Grid>
@@ -92,17 +92,17 @@ const ItemCrousel = () => {
                             //here you can also pass className, or any other button element attributes
                             style: {
                                 alignSelf: 'center',
-                                background: 'black',
+                                background: 'transparent',
                                 border: 'none',
                                 borderRadius: '50%',
-                                color: 'white',
+                                color: 'grey',
                                 cursor: 'pointer',
                                 fontSize: '25px',
                                 height: 30,
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`>`}</span>,
                         }}
@@ -110,17 +110,17 @@ const ItemCrousel = () => {
                             //here you can also pass className, or any other button element attributes
                             style: {
                                 alignSelf: 'center',
-                                background: 'black',
+                                background: 'transparent',
                                 border: 'none',
                                 borderRadius: '50%',
-                                color: 'white',
+                                color: 'grey',
                                 cursor: 'pointer',
                                 fontSize: '25px',
                                 height: 30,
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`<`}</span>,
                         }}

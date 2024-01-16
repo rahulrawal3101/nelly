@@ -22,17 +22,17 @@ const Accordiancmp = () => {
             {/* offer container */}
             <Grid container sx={{ p:'0px 50px',bgcolor:'#F5F5F5',display:'flex',justifyContent:'center',alignItems:'center',p:{lg:'20px 260px'} }}>
                 <Grid item lg={4}>
-                    <Box sx={{ bgcolor:'#E7F8FE',width:'250px',height:'200px',p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }} >
+                    <Box sx={{ bgcolor:'#E7F8FE',width:'250px',height:'200px',p:'20px',transition:'transform 0.2s','&:hover':{transform:'rotate(5deg)scale(1.1)'} }} >
                         <img src={offer1} alt="offer1" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={4}>
-                    <Box sx={{ bgcolor:'#E7F8FE', width:'250px',height:'200px',p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }}>
+                    <Box sx={{ bgcolor:'#E7F8FE', width:'250px',height:'200px',p:'20px',transition:'transform 0.2s','&:hover':{transform:'rotate(5deg)scale(1.1)'} }}>
                         <img src={offer2} alt="offer2" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={4}>
-                    <Box sx={{ bgcolor:'#E7F8FE', width:'250px',height:'200px',p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }}>
+                    <Box sx={{ bgcolor:'#E7F8FE', width:'250px',height:'200px',p:'20px',transition:'transform 0.2s','&:hover':{transform:'rotate(5deg)scale(1.1)'} }}>
                         <img src={offer3} alt="offer3" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
