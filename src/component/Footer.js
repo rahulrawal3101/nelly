@@ -14,25 +14,25 @@ const Footer = () => {
 
     const explorelinks = ['Explore Nearby','Blink Membership','Deals & Offers','Contact Lenses','Color Blind Glasses','Eye Test Camp','Home Eye Test'];
     const tipsguides = ['Knowledge Center','Frames & Face Shapes','How To Read A Prescription','AMD Test','Astigmatism Test','Near Vision Test','Size & Fit Guide'];
-    const eyemyeye = ['About Us','Contact Us','Careers','Blog','Sitemap','Cancellation & Refund Policy','Terms Of Use','Terms & Conditions For Tele Consultation','Privacy Policy','Delivery & Shipping Terms'];
+    const eyemyeye = ['About Us','Contact Us','Careers','Blog','Sitemap','Cancellation & Refund Policy','Terms Of Use','Privacy Policy','Delivery & Shipping Terms'];
 
   return (
     <>
-    <Grid container sx={{ bgcolor:'#333232', p:'20px 50px'}}>
-        <Grid item lg={3} md={6} sm={3} >
-            <Typography variant='p' sx={{ color:'white',fontWeight:'bold' }}>LET’S GET SOCIAL</Typography>
-            <Box sx={{ display:'flex',marginBottom:'15px' }}>
+    <Grid container sx={{ bgcolor:'#333232', p:'20px 30px'}}>
+        <Grid item lg={3} md={4} sm={6} xs={12} sx={{m:{xs:'3px 0px'}}}>
+            <Typography  sx={{ color:'white',fontWeight:'bold',fontSize:'14px' }}>LET’S GET SOCIAL</Typography>
+            <Box sx={{ display:'flex', }}>
                 <FacebookIcon sx={{color:'white',fontSize:'35px',marginRight:'5px'}}/>
                 <TwitterIcon sx={{color:'white',fontSize:'35px',marginRight:'5px'}}/>
                 <InstagramIcon sx={{color:'white',fontSize:'35px',marginRight:'5px'}}/>
                 <YouTubeIcon sx={{color:'white',fontSize:'35px',marginRight:'5px'}}/>
             </Box>
-            <Box sx={{mt:''}}>
-            <Typography variant='p' sx={{color:'white',fontWeight:'bold' }}>CONNECT WITH US:</Typography><br />
-            <Typography  sx={{color:'white'}}>08069051111</Typography><br />
-            <Typography variant='p' sx={{color:'white'}}>info@nelly.com</Typography><br />
-            <Typography variant='p' sx={{color:'white'}}>All Emails Will Be Answered Within 24 Hours</Typography><br />
-            <Typography variant='p' sx={{color:'white'}}>We're available at</Typography>
+            <Box sx={{mt:'10px'}}>
+            <Typography  sx={{color:'white',fontWeight:'bold',fontSize:'14px'  }}>CONNECT WITH US:</Typography>
+            <Typography  sx={{color:'white',fontSize:'14px' }}>08069051111</Typography><br />
+            <Typography  sx={{color:'white',fontSize:'14px'}}>info@nelly.com</Typography>
+            <Typography  sx={{color:'white',fontSize:'14px'}}>All Emails Will Be Answered Within 24 Hours</Typography>
+            <Typography sx={{color:'white',fontSize:'14px'}}>We're available at</Typography>
             <Grid container sx={{ display:'flex' }}>
                 <Grid item sx={{marginRight:'10px'}}>
                     <Box sx={{width:'100px',height:'50px'}}>
@@ -48,13 +48,13 @@ const Footer = () => {
             </Box>
         </Grid>
 
-        <Grid item lg={3} md={6} sm={3} >
-            <Typography variant='p' sx={{ color:'white',fontWeight:'bold' }}>EXPLORE</Typography>
-            <Box sx={{marginTop:'20px'}}>
+        <Grid item  lg={3} md={4} sm={6} xs={12} sx={{display:'flex', justifyContent:'left', alignItems:'flex-start',m:{xs:'5px 0px'} }}>
+            <Box >
+            <Typography sx={{ color:'white',fontWeight:'bold',fontSize:'14px', mb:'10px'  }}>EXPLORE</Typography>
                 {
                     explorelinks.map((e)=>{
                         return(
-                            <Typography sx={{color:'white',cursor:'pointer','&:hover':{ml:'2px', color:'grey'}}}>{e}</Typography>
+                            <Typography sx={{color:'white',cursor:'pointer',fontSize:'14px' ,'&:hover':{ml:'2px', color:'grey'}}}>{e}</Typography>
                         );
                     })
                 }
@@ -62,13 +62,13 @@ const Footer = () => {
             
         </Grid>
 
-        <Grid item lg={3} md={6} sm={3} >
-            <Typography variant='p' sx={{ color:'white',fontWeight:'bold' }}>TIPS & GUIDES</Typography>
-            <Box sx={{marginTop:'20px'}}>
+        <Grid item  lg={3} md={4} sm={6} xs={12} sx={{display:'flex', justifyContent:'left', alignItems:'flex-start',m:{xs:'5px 0px'}}}>
+            <Box >
+                <Typography sx={{ color:'white',fontWeight:'bold' , mb:'10px'}}>TIPS & GUIDES</Typography>
                 {
                     tipsguides.map((e)=>{
                         return(
-                            <Typography sx={{color:'white',cursor:'pointer','&:hover':{ml:'2px', color:'grey'}}}>{e}</Typography>
+                            <Typography sx={{color:'white',cursor:'pointer',fontSize:'14px' ,'&:hover':{ml:'2px', color:'grey'}}}>{e}</Typography>
                         );
                     })
                 }
@@ -77,22 +77,22 @@ const Footer = () => {
             
         </Grid>
 
-        <Grid item lg={3} md={6} sm={3} >
-            <Typography variant='p' sx={{ color:'white',fontWeight:'bold' }}>EYEMYEYE</Typography>
-            <Box sx={{marginTop:'20px'}}>
+        <Grid item  lg={3} md={4} sm={6} xs={12}  sx={{display:'flex', justifyContent:'left', alignItems:'center',m:{xs:'5px 0px'} }}>
+            <Box >
+            <Typography sx={{ color:'white',fontWeight:'bold',fontSize:'14px', mb:'10px' ,  }}>EYEMYEYE</Typography>
             {
                     eyemyeye.map((e)=>{
                         return(
-                            <Typography sx={{color:'white',cursor:'pointer','&:hover':{ml:'2px', color:'grey'}}}>{e}</Typography>
+                            <Typography sx={{color:'white',cursor:'pointer',fontSize:'14px','&:hover':{ml:'2px', color:'grey'}}}>{e}</Typography>
                         );
                     })
                 }
             </Box>
         </Grid>
 
-        <hr style={{width:'100%',marginTop:'20px',color:'red'}} />
-        <Grid xs={12}>
-        <Typography sx={{ color:'white',textAlign:'center' }}>Copyright © {date}. All Rights Reserved</Typography>
+        {/* <hr style={{width:'100%',marginTop:'20px',color:'grey'}} /> */}
+        <Grid xs={12} sx={{ display:'flex', justifyContent:'center',alignItems:'center', borderTop:'1px solid grey', p:'10px',mt:'5px'}}>
+        <Typography sx={{ color:'white',textAlign:'center', fontSize:{lg:'15px', md:'14px', sm:'13px', xs:'12px'} }}>Copyright © {date}. All Rights Reserved</Typography>
         </Grid>
     </Grid>
     </>

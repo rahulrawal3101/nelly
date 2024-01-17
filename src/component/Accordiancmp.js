@@ -238,9 +238,9 @@ const Accordiancmp = () => {
 
             {/* Faq section */}
             <Grid container sx={{ p: '0px 10px' }}>
-                <Grid item xs={12} sx={{ p: '20px' }}>
-                    <Typography>FAQ</Typography>
-                    <Box sx={{ bgcolor: '#F5F5F5', p: '20px' }}>
+                <Grid item xs={12} sx={{ p: '10px' }}>
+                    <Typography sx={{fontFamily:'sans-serif'}}>FAQ</Typography>
+                    <Box sx={{ bgcolor: '#F5F5F5', p: '10px' }}>
                         <Accordion sx={{ mb: '5px' }}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
@@ -285,28 +285,28 @@ const Accordiancmp = () => {
                 </Grid>
             </Grid>
             {/* faq section end */}
-            <Grid container sx={{ bgcolor: '#F5F5F5', padding: '20px 100px', display: 'flex', justifyContent: 'center' }}>
-                <Grid item lg={2} sm={2} sx={{ display: 'flex' }}>
+            {/* <Grid container sx={{ bgcolor: '#F5F5F5', padding: '20px 100px', display: 'flex', justifyContent: 'center', border:'1px solid red', overflowX:'scroll' }}>
+                <Grid item lg={2} md={2} sm={2} xs={2}  sx={{ display: 'flex' }}>
                     <img src="https://cdn.eyemyeye.com/mobile/mobile-site-content/icons/ftr_made_in_india.svg" alt="" width="50px" style={{ marginRight: '15px' }} />
                     <Typography > 100% Made in <br /> INDIA</Typography>
                 </Grid>
-                <Grid item lg={2} sm={2} sx={{ display: 'flex' }}>
+                <Grid item lg={2} md={2} sm={2} xs={2} sx={{ display: 'flex' }}>
                     <img src="https://cdn.eyemyeye.com/desktop/images/icon/ftr_best_quality.svg" alt="" width="50px" style={{ marginRight: '15px' }} />
                     <Typography > HIGH QUALITY <br /> PRODUCTS</Typography>
                 </Grid>
-                <Grid item lg={2} sm={2} sx={{ display: 'flex' }}>
+                <Grid item lg={2} md={2} sm={2} xs={2} sx={{ display: 'flex' }}>
                     <img src="https://cdn.eyemyeye.com/desktop/images/icon/ftr_faster_delivery.svg" alt="" width="50px" style={{ marginRight: '15px' }} />
                     <Typography > FAST TRACK <br /> DELIVERY</Typography>
                 </Grid>
-                <Grid item lg={2} sm={2} sx={{ display: 'flex' }}>
+                <Grid item lg={2} md={2} sm={2} xs={2} sx={{ display: 'flex' }}>
                     <img src="https://cdn.eyemyeye.com/mobile/mobile-site-content/icons/ftr_made_in_india.svg" alt="" width="50px" style={{ marginRight: '15px' }} />
                     <Typography > 7-Day Easy <br /> Returns</Typography>
                 </Grid>
-                <Grid item lg={2} sm={2} sx={{ display: 'flex' }}>
+                <Grid item lg={2} md={2} sm={2} xs={2} sx={{ display: 'flex' }}>
                     <img src="https://cdn.eyemyeye.com/desktop/images/icon/ftr_secure_payment.svg" alt="" width="50px" style={{ marginRight: '15px' }} />
                     <Typography > 100% Secure <br /> Payment</Typography>
                 </Grid>
-            </Grid>
+            </Grid> */}
             <Footer />
         </>
     )

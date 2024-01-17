@@ -17,6 +17,8 @@ import Brands from '../component/Brands';
 import SunGlasses from '../component/SunGlasses';
 import banner8 from '../assets/banner8.png';
 import banner7 from '../assets/banner7.png';
+import banner13 from '../assets/banner13.png';
+import banner14 from '../assets/banner14.png';
 
 const HeaderComp = () => {
   return (
@@ -26,14 +28,14 @@ const HeaderComp = () => {
  
     <Header/>
     <CrouselComp/>
-    <Grid container sx={{ p:'10px', justifyContent:'space-between', }}>
-        <Grid item xs={5.95} sx={{ height:{lg:'230px', md:'230px', sm:'170px',xs:'100px'}}}>
-            <img src={banner8} style={{width:'100%',height:'100%'}}/>
+    <Grid container sx={{ p:'10px 0px', justifyContent:'space-between', }}>
+        <Grid item xs={5.95} sx={{ height:{lg:'230px', md:'230px', sm:'170px',xs:'80px'}}}>
+            <img src={banner13} style={{width:'100%',height:'100%'}}/>
 
         </Grid>
 
-        <Grid item xs={5.95} sx={{ height:{lg:'230px', md:'230px', sm:'170px',xs:'100px'}}}>
-        <img src={banner7} style={{width:'100%',height:'100%'}}/>
+        <Grid item xs={5.95} sx={{ height:{lg:'230px', md:'230px', sm:'170px',xs:'80px'}}}>
+        <img src={banner14} style={{width:'100%',height:'100%'}}/>
         </Grid>
 
     </Grid>

@@ -1,4 +1,4 @@
-import { Box, Grid, Paper, Typography } from '@mui/material';
+import { Box, Button, Grid, Paper, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
 import male from '../assets/male.webp';
@@ -7,37 +7,44 @@ import a2 from '../assets/a2.webp';
 import a3 from '../assets/a3.webp';
 import a4 from '../assets/a4.webp';
 import a5 from '../assets/a5.webp';
+import w1 from '../assets/women4.webp';
+import w2 from '../assets/w2.avif';
+import w3 from '../assets/w3.avif';
+import w4 from '../assets/w4.avif';
+import w5 from '../assets/w5.jpg';
+import StarIcon from '@mui/icons-material/Star';
 
 import '../Homepage.css'
+import { Woman2 } from '@mui/icons-material';
 
 
 const imgArr = [
     {
-        img: a1,
+        img: w1,
         title: 'NERDLANE',
         srp: 999,
         mrp: 2990
     },
     {
-        img: a2,
+        img: w2,
         title: 'NERDLANE',
         srp: 999,
         mrp: 2990
     },
     {
-        img: a3,
+        img: w3,
         title: 'NERDLANE',
         srp: 999,
         mrp: 2990
     },
     {
-        img: a4,
+        img: w4,
         title: 'NERDLANE',
         srp: 999,
         mrp: 2990
     },
     {
-        img: a5,
+        img: w5,
         title: 'NERDLANE',
         srp: 999,
         mrp: 2990
@@ -54,7 +61,7 @@ const ItemCrousel = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 1200); // Set your threshold for small screen width
+            setIsSmallScreen(window.innerWidth < 1600); // Set your threshold for small screen width
         };
 
         // Initial check and event listener for window resize
@@ -71,8 +78,8 @@ const ItemCrousel = () => {
         <>
             <Grid container>
                 <Grid container>
-                    <Grid item xs={12} sx={{mt:'30px'}}>
-                        <Typography sx={{ fontSize: {lg:'25px', md:'22px', sm:'20px', xs:'18px'}, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}><a href='' style={{color:'#424242'}}>Eyeglasses On Sale - For you</a></Typography>
+                    <Grid item xs={12} sx={{ mt: '30px' }}>
+                        <Typography sx={{ fontSize: { lg: '25px', md: '22px', sm: '20px', xs: '18px' }, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color: '#424242' }}><a href='' style={{ color: '#424242' }}>Kurtas & Sets - For you</a></Typography>
 
                     </Grid>
                 </Grid>
@@ -155,9 +162,46 @@ const ItemCrousel = () => {
                         {
                             imgArr.map((ele, index) => {
                                 return (
-                                    <Box sx={{ p: '20px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
-                                        <Box sx={{ width: '370px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column' }}>
-                                            <Box sx={{ height: {lg:'205px', md:'205px', sm:'190px',xs:'180px'}, width: {lg:'370px', md:'370px', sm:'360px', xs:'350px'},  }}>
+                                    <Box sx={{ p: '20px',   bgcolor: 'transparent', width: '370px',  display:'flex', justifyContent:'center', alignItems:'center' }}>
+
+                                        <Paper sx={{ width: '250px', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }} elevation={0}>
+                                            {/* <Box sx={{width:'100%', height:'70%', }}>
+                                            <img src={ele.img} alt='womrn' style={{width:'100%', height:'100%', }}/>
+
+                                        </Box> */}
+                                            <Grid container >
+
+
+                                                <Grid item xs={12}>
+                                                    <Box sx={{ width: '100%', height: '300px', cursor: 'pointer', '&:hover': { transform: 'scale(1.05)', transition: 'transform 300ms' } }}>
+                                                        <img src={ele.img} alt='veg' style={{ width: '100%', height: '100%', borderRadius: '6px' }} />
+
+                                                    </Box>
+
+                                                </Grid>
+                                                <Grid item xs={12} sx={{ p: '2px' }}>
+                                                    <Typography sx={{ fontSize: '16px', mt: '5px', fontFamily:'serif' }}>Women Purple Yoke Design Kurta</Typography>
+                                                </Grid>
+                                                <Grid item xs={12} sx={{ display: 'flex', p: '2px', justifyContent: 'space-between', alignItems: 'center' }}>
+                                                    <Box>
+                                                        <Typography sx={{ fontSize: '19px',fontFamily:'serif' }}>₹1499 <del style={{ fontSize: '14px', color: 'grey', fontFamily:'serif' }}>₹2999</del></Typography>
+                                                        <Typography sx={{ fontSize: '15px', color: 'grey' }}>50% off</Typography>
+                                                    </Box>
+                                                    <Button sx={{ background: 'linear-gradient(103deg, rgba(147,146,142,1) 0%, rgba(43,40,37,1) 66%, rgba(14,6,0,1) 100%)', color: 'white', p: '5px 35px', borderRadius: '20px', fontWeight: 'bold',fontFamily:'serif' }}>Add</Button>
+
+                                                </Grid>
+                                                {/* <Grid item xs={12} sx={{ p: '2px', pb: '10px' }}>
+                                                    <Box sx={{ width: '150px', border: '1px solid grey', borderRadius: '10px', p: '4px', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+                                                        <StarIcon sx={{ fontSize: '13px', color: '#ffd740' }} />
+                                                        <Typography sx={{ fontSize: '14px', color: 'grey' }}> New On The Menu</Typography>
+                                                    </Box>
+
+                                                </Grid> */}
+                                            </Grid>
+
+                                        </Paper>
+                                        {/* <Box sx={{ width: '370px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column' }}>
+                                            <Box sx={{ height: {lg:'205px', md:'205px', sm:'190px',xs:'180px'}, width: {lg:'370px', md:'370px', sm:'360px', xs:'350px'},display:'flex', justifyContent:'center'  }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>
                                             <Box sx={{ height: '70px', width: '300px', }}>
@@ -166,10 +210,10 @@ const ItemCrousel = () => {
 
                                             </Box>
 
-                                        </Box>
+                                        </Box> */}
 
 
-                                       
+
                                     </Box>
                                 )
                             })

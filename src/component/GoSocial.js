@@ -102,7 +102,7 @@ const GoSocial = () => {
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`>`}</span>,
                         }}
@@ -120,7 +120,7 @@ const GoSocial = () => {
                                 lineHeight: 1,
                                 textAlign: 'center',
                                 width: 30,
-                                display: isSmallScreen ? 'none' : 'block', // Hide on small screens
+                                // display: isSmallScreen ? 'none' : 'block', // Hide on small screens
                             },
                             children: <span>{`<`}</span>,
                         }}
@@ -156,8 +156,8 @@ const GoSocial = () => {
                         {
                             imgArr.map((ele, index) => {
                                 return (
-                                    <Box sx={{ p: '15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent', }}>
-                                        <Box sx={{ width: '290px', height: '390px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
+                                    <Box sx={{ p: '15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent',width:{lg:'290px',md:'290px',sm:'290px',xs:'285px'} }}>
+                                        <Box sx={{ height: '390px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
                                             <Box sx={{ height: '370px', width: '100%',  }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>
