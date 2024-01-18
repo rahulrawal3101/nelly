@@ -5,8 +5,10 @@ import brand1 from '../assets/brand1.webp';
 import brand2 from '../assets/brand2.webp';
 import brand3 from '../assets/brand3.webp';
 import brand4 from '../assets/brand4.webp';
-import brand5 from '../assets/brand5.webp';
+import brand5 from '../assets/brand5.jpg';
 import brand6 from '../assets/brand6.webp';
+import brand7 from '../assets/brand7.webp';
+import brand8 from '../assets/brand8.webp';
 
 import '../Homepage.css'
 
@@ -39,6 +41,16 @@ const imgArr = [
     },
     {
         img: brand6,
+        title: 'Tanvi Takkar Collecions',
+        
+    },
+    {
+        img: brand7,
+        title: 'Tanvi Takkar Collecions',
+        
+    },
+    {
+        img: brand8,
         title: 'Tanvi Takkar Collecions',
         
     },
@@ -159,7 +171,7 @@ const Brands = () => {
                             imgArr.map((ele, index) => {
                                 return (
                                     <Box sx={{ p: '0px 15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent',width:{lg:'290px',md:'290px',sm:'290px',xs:'285px'} }}>
-                                        <Box sx={{ height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
+                                        <Box sx={{ height: '370px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
                                             <Box sx={{ height: '370px', width: '100%',  }}>
                                                 <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
                                             </Box>

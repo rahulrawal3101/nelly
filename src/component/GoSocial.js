@@ -7,39 +7,51 @@ import h3 from '../assets/h3.webp';
 import h4 from '../assets/h4.webp';
 import h5 from '../assets/h5.webp';
 import h6 from '../assets/h6.webp';
+import kiara from '../assets/kiara.png';
+import kriti from '../assets/kriti.avif';
+import shradha from '../assets/shradha.webp';
+import ananya from '../assets/ananya.jpg';
+import shanaya from '../assets/shanaya.avif';
+import kareena from '../assets/kareena.webp';
+import alia from '../assets/alia.jpg';
 
 import '../Homepage.css'
 
 
 const imgArr = [
     {
-        img: h1,
-        title: 'Harsh Pandit collections',
+        img: kiara,
+        title: 'Kiara Advani',
         
     },
     {
-        img: h2,
-        title: 'Akash Choudary Collections',
+        img: kriti,
+        title: 'Kriti Sanon',
        
     },
     {
-        img: h3,
-        title: 'Palak Purswani Collections',
+        img: ananya,
+        title: 'Ananya Pandey',
       
     },
     {
-        img: h4,
-        title: 'Sunayana Foxzdar Collections',
+        img: shradha,
+        title: 'Shradha kapoor',
         
     },
     {
-        img: h5,
+        img: shanaya,
         title: 'Pooja Gaur Collections',
         
     },
     {
-        img: h6,
-        title: 'Tanvi Takkar Collecions',
+        img: kareena,
+        title: 'Kareena Kapoor',
+        
+    },
+    {
+        img: alia,
+        title: 'Alia Bhatt',
         
     },
 
@@ -158,10 +170,10 @@ const GoSocial = () => {
                                 return (
                                     <Box sx={{ p: '15px', alignSelf: 'center', position: 'relative', bgcolor: 'transparent',width:{lg:'290px',md:'290px',sm:'290px',xs:'285px'} }}>
                                         <Box sx={{ height: '390px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column', border:'1px solid lightgrey' }}>
-                                            <Box sx={{ height: '370px', width: '100%',  }}>
-                                                <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
+                                            <Box sx={{ height: '370px', width: '100%', borderRadius:'3px' }}>
+                                                <img src={ele.img} alt='glass' style={{width:'100%', height:'100%', borderRadius:'3px'}}/>
                                             </Box>
-                                            <Box sx={{ height: '70px', width: '100%'}}>
+                                            <Box sx={{  width: '100%', p:'3px'}}>
                                                 <Typography sx={{fontSize:'13px', color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
                                                
 
