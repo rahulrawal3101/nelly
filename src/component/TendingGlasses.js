@@ -54,7 +54,7 @@ const imgArr = [
 
 ]
 
-const TrendingGlasses = () => {
+const TendingGlasses = () => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -174,8 +174,8 @@ const TrendingGlasses = () => {
 
 
                                                 <Grid item xs={12}>
-                                                    <Box sx={{ width: '100%', height: '300px', cursor: 'pointer', '&:hover': { transform: 'scale(1.05)', transition: 'transform 300ms' } }}>
-                                                        <img src={ele.img} alt='veg' style={{ width: '100%', height: '100%', borderRadius: '6px' }} />
+                                                    <Box className='img-hover-zoom'>
+                                                        <img src={ele.img} alt='veg' />
 
                                                     </Box>
 
@@ -201,17 +201,7 @@ const TrendingGlasses = () => {
                                             </Grid>
 
                                         </Paper>
-                                        {/* <Box sx={{ width: '370px', height: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column' }}>
-                                            <Box sx={{ height: {lg:'205px', md:'205px', sm:'190px',xs:'180px'}, width: {lg:'370px', md:'370px', sm:'360px', xs:'350px'},display:'flex', justifyContent:'center'  }}>
-                                                <img src={ele.img} alt='glass' style={{width:'100%', height:'100%'}}/>
-                                            </Box>
-                                            <Box sx={{ height: '70px', width: '300px', }}>
-                                                <Typography sx={{fontSize:{lg:'18px', md:'17px', sm:'15px',xs:'15px'}, color:'#424242', fontFamily:'sans-serif', fontWeight:'bold', textAlign:'center'}}>{ele.title}</Typography>
-                                                <Typography sx={{fontSize:{lg:'17px', md:'16px',sm:'15px',xs:'15px'}, fontWeight:'bold', color:'#424242', textAlign:'center'}}>₹{ele.srp} <del style={{fontSize:'14px', color:'#bdbdbd'}}>₹{ele.mrp}</del></Typography>
-
-                                            </Box>
-
-                                        </Box> */}
+                                       
 
 
 
@@ -228,6 +218,6 @@ const TrendingGlasses = () => {
     )
 }
 
-export default TrendingGlasses
+export default TendingGlasses
 
 

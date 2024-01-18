@@ -173,10 +173,11 @@ const ItemCrousel = () => {
 
 
                                                 <Grid item xs={12}>
-                                                    <Box sx={{ width: '100%', height: '300px', cursor: 'pointer', '&:hover': { transform: 'scale(1.05)', transition: 'transform 300ms' } }}>
-                                                        <img src={ele.img} alt='veg' style={{ width: '100%', height: '100%', borderRadius: '6px' }} />
+                                                    <Box className='img-hover-zoom'>
+                                                        <img src={ele.img} alt='veg'  />
 
                                                     </Box>
+                                                  
 
                                                 </Grid>
                                                 <Grid item xs={12} sx={{ p: '2px' }}>

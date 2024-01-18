@@ -7,3 +7,22 @@
     transform: scale(0.8);
     transition:transform 300ms;
   }
+
+.img-hover-zoom{
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.08);
+}

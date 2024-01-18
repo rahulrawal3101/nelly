@@ -15,14 +15,17 @@ import glass3 from '../assets/glass3.jpeg';
 import glass4 from '../assets/glass4.jpeg';
 import glass5 from '../assets/glass5.jpeg';
 import glass6 from '../assets/glass6.jpeg';
-import f1 from '../assets/f1.jpeg';
-import f2 from '../assets/f2.jpeg';
-import f3 from '../assets/f3.jpeg';
-import f4 from '../assets/f4.jpeg';
+import f1 from '../assets/f1.png';
+import f2 from '../assets/f2.png';
+import f3 from '../assets/f3.png';
+import f4 from '../assets/f4.png';
 import f5 from '../assets/f5.jpeg';
 import f6 from '../assets/f6.jpeg';
 import f7 from '../assets/f7.jpeg';
 import f8 from '../assets/f8.jpeg';
+import j1 from '../assets/j1.jpg';
+import j2 from '../assets/j2.avif';
+import j3 from '../assets/j3.jpg';
 
 
 const Accordiancmp = () => {
@@ -90,22 +93,22 @@ const Accordiancmp = () => {
         {
             id:5,
             name:'Resists Fingerprints & Smudges',
-            image:f5
+            image:f1
         },
         {
             id:6,
             name:'Repels Water & Liquids',
-            image:f6
+            image:f2
         },
         {
             id:7,
             name:'Repels Dust Particles',
-            image:f7
+            image:f3
         },
         {
             id:8,
             name:'Reduces Color & Image Distortion',
-            image:f8
+            image:f4
         }
 
     ];
@@ -119,20 +122,20 @@ const Accordiancmp = () => {
 
 
              {/* offer container */}
-             <Grid container sx={{ p:'0px 50px',bgcolor:'#F5F5F5',display:'flex',justifyContent:'space-around',alignItems:'center',p:{lg:'20px 150px',md:'15px 50px', sm:'10px 50px', xs:'10px 20px'},}}>
+             <Grid container sx={{ p:'0px 50px',bgcolor:'#757575',display:'flex',justifyContent:'space-around',alignItems:'center',p:{lg:'20px 150px',md:'15px 50px', sm:'10px 50px', xs:'10px 20px'},}}>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE',width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }} >
-                        <img src={offer1} alt="offer1" style={{ width:'100%',height:'100%' }} />
+                        <img src={j1} alt="offer1" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE', width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }}>
-                        <img src={offer2} alt="offer2" style={{ width:'100%',height:'100%' }} />
+                        <img src={j2} alt="offer2" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE', width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }}>
-                        <img src={offer3} alt="offer3" style={{ width:'100%',height:'100%' }} />
+                        <img src={j3} alt="offer3" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
             </Grid>
@@ -217,20 +220,20 @@ const Accordiancmp = () => {
             {/* Bestselling Eyeglasses Shapes end */}
 
             {/* offer container */}
-            <Grid container sx={{ p:'0px 50px',bgcolor:'#F5F5F5',display:'flex',justifyContent:'space-around',alignItems:'center',p:{lg:'20px 150px',md:'15px 50px', sm:'10px 50px', xs:'10px 20px'},}}>
+            <Grid container sx={{ p:'0px 50px',bgcolor:'#757575',display:'flex',justifyContent:'space-around',alignItems:'center',p:{lg:'20px 150px',md:'15px 50px', sm:'10px 50px', xs:'10px 20px'},}}>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE',width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }} >
-                        <img src={offer1} alt="offer1" style={{ width:'100%',height:'100%' }} />
+                        <img src={j1} alt="offer1" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE', width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }}>
-                        <img src={offer2} alt="offer2" style={{ width:'100%',height:'100%' }} />
+                        <img src={j2} alt="offer2" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE', width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }}>
-                        <img src={offer3} alt="offer3" style={{ width:'100%',height:'100%' }} />
+                        <img src={j3} alt="offer3" style={{ width:'100%',height:'100%' }} />
                     </Box>
                 </Grid>
             </Grid>
