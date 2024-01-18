@@ -83,7 +83,7 @@ const Brands = () => {
         <>
             <Grid container>
                 <Grid container>
-                    <Grid item xs={12}  sx={{mt:'23px', p:'0px 10px'}}>
+                    <Grid item xs={12}  sx={{mt:'13px', p:'0px 10px'}}>
                         <Typography sx={{ fontSize: {lg:'25px', md:'22px', sm:'20px', xs:'18px'}, fontWeight: 'bold', fontFamily: 'sans-serif', textAlign: 'center', color:'#424242' }}>Eyeglasses Brands</Typography>
                         <Typography sx={{fontSize:{lg:'15px', md:'14px', sm:'13px',xs:'13px'}, color:'grey', fontFamily:'sans-serif', textAlign: 'center'}}>Dazzle & captivate all eyes with Eyeglasses from International Brands</Typography>
 
