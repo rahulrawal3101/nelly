@@ -220,7 +220,7 @@ const Accordiancmp = () => {
             {/* Bestselling Eyeglasses Shapes end */}
 
             {/* offer container */}
-            <Grid container sx={{ p:'0px 50px',bgcolor:'#757575',display:'flex',justifyContent:'space-around',alignItems:'center',p:{lg:'20px 150px',md:'15px 50px', sm:'10px 50px', xs:'10px 20px'},}}>
+            <Grid container sx={{ p:'0px 50px',bgcolor:'#212121',display:'flex',justifyContent:'space-around',alignItems:'center',p:{lg:'20px 150px',md:'15px 50px', sm:'10px 50px', xs:'10px 20px'},borderRadius:'10px'}}>
                 <Grid item lg={3} sx={{m:'5px'}}>
                     <Box sx={{ bgcolor:'#E7F8FE',width:{lg:'270px',md:'250px', sm:'250px', xs:'220px'},height:{lg:'200px',md:'150px', sm:'150px', xs:'150px'},p:'20px',transition:'1s','&:hover':{transform:'rotate(5deg)'} }} >
                         <img src={j1} alt="offer1" style={{ width:'100%',height:'100%' }} />

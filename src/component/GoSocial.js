@@ -41,7 +41,7 @@ const imgArr = [
     },
     {
         img: shanaya,
-        title: 'Pooja Gaur Collections',
+        title: 'Shanaya Kapoor',
         
     },
     {
