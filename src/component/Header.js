@@ -6,12 +6,14 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import logo from '../assets/logo.png';
-import React from 'react'
+import React, { useState } from 'react'
+import SideDrawer from './sideDrawer';
 
 const Header = () => {
+    const [open, setopen] = useState(false)
     return (
         <>
-            <Grid container sx={{ position: 'sticky', top: '0px', zIndex: '99999', bgcolor: 'white' }}>
+            <Grid container sx={{ position: 'sticky', top: '0px', zIndex: '99', bgcolor: 'white' }}>
 
                 <Grid container sx={{ display:{lg:'flex', md:'flex', sm:'none', xs:'none'}, bgcolor: "#212121", justifyContent: "left", p: '6px' }}>
                     <Grid item lg={3} md={4}sm={4} xs={4} sx={{ justifyContent: "left", alignItems: "flex-start", }}>
@@ -26,7 +28,7 @@ const Header = () => {
                 </Grid>
                 <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', pb: '3px', pl: '3px', pr: '3px' }}>
                     <Grid item lg={3} md={3} sm={5} xs={6} sx={{ p: '10px', display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
-                        <MenuOutlinedIcon sx={{ fontSize: {lg: '36px' , md: '30px', sm: '26px', xs: '24px', }, color: "#212121" }} />
+                        <MenuOutlinedIcon sx={{ fontSize: {lg: '36px' , md: '30px', sm: '26px', xs: '24px', }, color: "#212121", cursor:'pointer' }} onClick={()=>{setopen(true)}}/>
                         <Box sx={{width:{lg:'200px', md:'190px', sm:'190px', xs:'178px'},height:{lg:'40px', md:'38px', sm:'33px', xs:'27px'}}}>
                             <img src={logo} alt='logo' style={{width:'100%', height:'100%'}}/>
                             {/* <Typography sx={{ fontSize: {lg:'30px', md:'28px', sm:'25px', xs:'22px'}, fontFamily: 'sans-serif', ml: '10px' }}>NELLY.COM</Typography> */}
@@ -35,22 +37,22 @@ const Header = () => {
                     <Grid item xs={3.1} sx={{ p: '10px', display:{lg:'block', md:'block', sm:'none', xs:'none' }}}>
                         <Box sx={{ width: '100%', height: '30px', bgcolor: '#eeeeee', p: '5px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderRadius: '3px' }}>
                             <InputBase placeholder='Search for product, name, brands, and more' sx={{ fontSize: '13px', color: '#212121', width: '90%' }} />
-                            <SearchIcon sx={{ color: 'grey' }} />
+                            <SearchIcon sx={{ color: 'grey', cursor:'pointer' }} />
                         </Box>
 
                     </Grid>
                     <Grid item xs={4} sx={{ p: '10px', display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
                         <Box sx={{ ml: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                            <PersonOutlineOutlinedIcon sx={{ fontSize: {lg:'30px', md:'27px', sm:'27px', xs:'26px'} }} />
-                            <Typography sx={{ fontSize: '11px', fontWeight: 'bold',display:{lg:'block', md:'block', sm:'none', xs:'none'} }}>Log In</Typography>
+                            <PersonOutlineOutlinedIcon sx={{ fontSize: {lg:'30px', md:'27px', sm:'27px', xs:'26px', cursor:'pointer'} }} />
+                            <Typography sx={{ fontSize: '11px', fontWeight: 'bold',display:{lg:'block', md:'block', sm:'none', xs:'none'}, cursor:'pointer' }}>Log In</Typography>
                         </Box>
                         <Box sx={{ ml: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                            <FavoriteBorderOutlinedIcon sx={{fontSize: {lg:'30px', md:'27px', sm:'27px', xs:'26px'}  }} />
-                            <Typography sx={{ fontSize: '11px', fontWeight: 'bold',display:{lg:'block', md:'block', sm:'none', xs:'none'}  }}>Favorite</Typography>
+                            <FavoriteBorderOutlinedIcon sx={{fontSize: {lg:'30px', md:'27px', sm:'27px', xs:'26px', cursor:'pointer'}  }} />
+                            <Typography sx={{ fontSize: '11px', fontWeight: 'bold',display:{lg:'block', md:'block', sm:'none', xs:'none'}, cursor:'pointer'  }}>Favorite</Typography>
                         </Box>
                         <Box sx={{ ml: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                            <ShoppingBagOutlinedIcon sx={{fontSize: {lg:'30px', md:'27px', sm:'27px', xs:'26px'} }} />
-                            <Typography sx={{ fontSize: '11px', fontWeight: 'bold', textAlign: 'center',display:{lg:'block', md:'block', sm:'none', xs:'none'}  }}>Shopping Cart</Typography>
+                            <ShoppingBagOutlinedIcon sx={{fontSize: {lg:'30px', md:'27px', sm:'27px', xs:'26px', cursor:'pointer'} }} />
+                            <Typography sx={{ fontSize: '11px', fontWeight: 'bold', textAlign: 'center',display:{lg:'block', md:'block', sm:'none', xs:'none'}, cursor:'pointer'  }}>Shopping Cart</Typography>
                         </Box>
 
                     </Grid>
@@ -58,52 +60,52 @@ const Header = () => {
                 <Grid container sx={{ justifyContent: 'center', p:{ lg:'7px 0px', md:'7px 0px', sm:'5px 0px 10px 0px', xs:'5px 0px 10px 0px'} }}>
                     <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'none', xs: 'none' }, justifyContent: 'left', alignItems: 'center' }}>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '60px', md: '55px' } }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>SALE</Typography>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>SALE</Typography>
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '60px', md: '55px' } }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>NEW IN</Typography>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>NEW IN</Typography>
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '80px', sm: '74px' } }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>TOP LIST</Typography>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' , cursor:'pointer'} }}>TOP LIST</Typography>
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '110px', sm: '100px' }, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>CLOTHES</Typography>
-                            <KeyboardArrowDownOutlinedIcon sx={{ fontSize: { lg: '25px', md: '20px' } }} />
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' , cursor:'pointer'} }}>CLOTHES</Typography>
+                            <KeyboardArrowDownOutlinedIcon sx={{ fontSize: { lg: '25px', md: '20px', cursor:'pointer' } }} />
 
                         </Box>
-                        <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '100px', sm: '90px' }, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>SHOES</Typography>
-                            <KeyboardArrowDownOutlinedIcon />
+                        <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '100px', sm: '90px' }, display: 'flex', justifyContent: 'space-around', alignItems: 'center', cursor:'pointer' }}>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>SHOES</Typography>
+                            <KeyboardArrowDownOutlinedIcon sx={{ fontSize: { lg: '25px', md: '20px', cursor:'pointer' } }} />
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '170px', md: '140px' }, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>ACCESSORIES</Typography>
-                            <KeyboardArrowDownOutlinedIcon />
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>ACCESSORIES</Typography>
+                            <KeyboardArrowDownOutlinedIcon sx={{ fontSize: { lg: '25px', md: '20px', cursor:'pointer' } }} />
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '110px', md: '90px' }, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>SPOTRS</Typography>
-                            <KeyboardArrowDownOutlinedIcon />
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>SPOTRS</Typography>
+                            <KeyboardArrowDownOutlinedIcon sx={{ fontSize: { lg: '25px', md: '20px', cursor:'pointer' } }} />
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '120px', md: '100px' }, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>INTIMATE</Typography>
-                            <KeyboardArrowDownOutlinedIcon />
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>INTIMATE</Typography>
+                            <KeyboardArrowDownOutlinedIcon sx={{ fontSize: { lg: '25px', md: '20px', cursor:'pointer' } }} />
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '80px', md: '70px' } }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>BRANDS</Typography>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>BRANDS</Typography>
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '120px', md: '100px' } }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>NELLYBYBELLY</Typography>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>NELLYBYBELLY</Typography>
 
                         </Box>
                         <Box sx={{ borderRight: '1px solid #e0e0e0', width: { lg: '100px', md: '80px' } }}>
-                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)' } }}>OUTLET</Typography>
+                            <Typography sx={{ fontSize: { lg: '14px', sm: '12px' }, textAlign: 'center', '&:hover': { fontWeight: 'bold', textShadow: ' 3px 2px 8px rgba(26,180,0,0.6)', cursor:'pointer' } }}>OUTLET</Typography>
 
                         </Box>
 
@@ -117,13 +119,8 @@ const Header = () => {
 
                 </Grid>
 
-
-                {/* <AppBar position="static">
-                    <Toolbar>
-
-                    </Toolbar>
-                </AppBar> */}
             </Grid>
+            <SideDrawer open={open} setOpen={setopen}/>
 
         </>
     )
