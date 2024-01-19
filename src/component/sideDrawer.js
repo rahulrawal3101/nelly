@@ -19,67 +19,67 @@ const SideDrawer = ({ open, setOpen }) => {
             open={open}
             onClose={() => { setOpen(false) }}
             PaperProps={{
-                sx: { width: { lg: '27%', md: '28%', sm: '45%', xs: '80%' }, zIndex: 999, margin: 'auto', bgcolor: 'white', borderRadius: '0px 6px 6px 0px' }
+                sx: { width: { lg: '27%', md: '38%', sm: '45%', xs: '70%' }, zIndex: 999, margin: 'auto', bgcolor: 'white', borderRadius: '0px 6px 6px 0px' }
             }}
         >
             <Grid container className='removeScroll'>
                 <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center', p: '4px', position: 'sticky', top: '0px', zIndex: '99', bgcolor: 'white'}}>
                     <Grid item xs={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
-                        <Box sx={{ width: '225px', height: '43px', ml: '14px' }}>
-                            <img src={logo} alt='logo' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <Box sx={{ width: {lg:'225px', md:'200px', sm:'180px', xs:'150px'}, height: {lg:'43px', md:'40px', sm:'35px', xs:'30px'}, ml: '14px' }}>
+                            <img src={logo} alt='logo' style={{ width: '100%', height: '100%',  }} />
                         </Box>
                     </Grid>
                     <Grid item xs={2} sx={{ bgcolor: 'white', display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
 
-                        <CancelOutlinedIcon sx={{ color: '#212121', fontSize: '40px', cursor: 'pointer' }} onClick={closeHandler} />
+                        <CancelOutlinedIcon sx={{ color: '#424242', fontSize: {lg:'40px', md:'35px', sm:'30px', xs:'27px'}, cursor: 'pointer' }} onClick={closeHandler} />
 
                     </Grid>
                 </Grid>
 
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', mt: '8px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>SALE</Typography>
+                    <Typography sx={{ fontSize: {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>SALE</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>NEW IN</Typography>
+                    <Typography sx={{ fontSize: {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>NEW IN</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>TOP LIST</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>TOP LIST</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px', }}>CLOTHES</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px', }}>CLOTHES</Typography>
                     <KeyboardArrowRightOutlinedIcon sx={{ color: '#424242' }} />
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>SHOES</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>SHOES</Typography>
                     <KeyboardArrowRightOutlinedIcon sx={{ color: '#424242' }} />
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>ACCESSORIES</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>ACCESSORIES</Typography>
                     <KeyboardArrowRightOutlinedIcon sx={{ color: '#424242' }} />
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>SPORTS</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>SPORTS</Typography>
                     <KeyboardArrowRightOutlinedIcon sx={{ color: '#424242' }} />
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>INTIMATE</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>INTIMATE</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>BRANDS</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>BRANDS</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>NELLYBYBELLY</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>NELLYBYBELLY</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px' }}>
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>OUTLET</Typography>
+                    <Typography sx={{ fontSize: {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>OUTLET</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', bgcolor: '#e8eaf6', display: 'flex', alignItems: 'center' }}>
                     <PersonOutlineOutlinedIcon sx={{ fontSize: '25px', ml: '10px' }} />
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>LOGIN</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>LOGIN</Typography>
                 </Grid>
                 <Grid item xs={12} sx={{ borderTop: '1px solid lightgrey', p: '13px', bgcolor: '#e8eaf6', display: 'flex', alignItems: 'center' }}>
                     <ChatBubbleOutlineOutlinedIcon sx={{ fontSize: '25px', ml: '10px', }} />
-                    <Typography sx={{ fontSize: '15px', ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>CUSTOMER SERVICE</Typography>
+                    <Typography sx={{ fontSize:  {lg:'15px', md:'14px', sm:'14px', xs:'14px'}, ml: '15px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>CUSTOMER SERVICE</Typography>
                 </Grid>
 
 
